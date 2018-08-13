@@ -1,0 +1,117 @@
+@import "common/variables";
+@import "common/typography";
+@import "../../../ed-template-6/library/scss/common/partials/normalize";
+@import "../../../ed-template-6/library/scss/common/partials/functions";
+@import "../../../ed-template-6/library/scss/common/partials/mixins";
+@import "../../../ed-template-6/library/scss/common/base";
+@import "../../../ed-template-6/library/scss/common/layout";
+@import "common/buttons"; 
+
+// PARENT THEME STYLES ------------------------------------------------------------------
+
+// DISCLAIMER POPUP
+@import "../../../ed-template-6/library/scss/disclaimer-popup/option-1/disclaimer-popup";
+
+// LOADER
+@import "../../../ed-template-6/library/scss/loader/option-1/variables";
+@import "../../../ed-template-6/library/scss/loader/option-1/loader";
+
+// CONTACT PG
+@import "../../../ed-template-6/library/scss/pages/contact/option-1/contact-pg-base";
+
+// FAQ PG
+@import '../../../ed-template-6/library/scss/faqs/option-1/variables';
+@import "../../../ed-template-6/library/scss/faqs/option-1/faqs-listing";
+
+// HOURS
+@import "../../../ed-template-6/library/scss/hours/option-1/hours-base"; 
+
+// MINI FORMS
+@import '../../../ed-template-6/library/scss/mini-form//option-1/variables';
+@import "../../../ed-template-6/library/scss/mini-form/option-1/mini-form-base";
+
+// POST LISTING
+@import "../../../ed-template-6/library/scss/posts/listing/option-1/variables";
+@import "../../../ed-template-6/library/scss/posts/listing/option-1/post-listing-base";
+
+// POST SINGLE
+@import "../../../ed-template-6/library/scss/posts/single/option-1/variables";
+@import "../../../ed-template-6/library/scss/posts/single/option-1/single-base";
+
+// RESPONSIVE MENU
+@import "../../../ed-template-6/library/scss/responsive-menu/option-2/variables.scss";
+@import "../../../ed-template-6/library/scss/responsive-menu/option-2/responsive-menu.scss";
+
+// REVIEWS LIST
+@import "../../../ed-template-6/library/scss/reviews-listing/option-1/variables";
+@import "../../../ed-template-6/library/scss/reviews-listing/option-1/template-list-base";
+
+// SIDEBAR
+@import "../../../ed-template-6/library/scss/sidebar/option-2/variables.scss";
+@import "../../../ed-template-6/library/scss/sidebar/option-2/sidebar-base.scss";
+@import "../../../ed-template-6/library/scss/sidebar/option-2/sidebar-cta.scss";
+@import "../../../ed-template-6/library/scss/sidebar/option-2/sidebar-blog.scss";
+@import "../../../ed-template-6/library/scss/sidebar/option-2/sidebar-hours.scss";
+@import "../../../ed-template-6/library/scss/sidebar/option-2/custom-sidebar.scss";
+
+// STAFF PG
+@import "../../../ed-template-6/library/scss/pages/staff/option-1/variables.scss";
+@import "../../../ed-template-6/library/scss/pages/staff/option-1/staff-base.scss";
+
+// TITLEBAR
+@import "../../../ed-template-6/library/scss/titlebar/option-1/titlebar-base";
+
+// VEHICLES PG
+@import "../../../ed-template-6/library/scss/pages/vehicles/option-1/variables.scss";
+@import "../../../ed-template-6/library/scss/pages/vehicles/option-1/vehicle-pg-base";
+@import "../../../ed-template-6/library/scss/pages/vehicles/option-1/pt-tabs-overides";
+
+// VEHICLE RETARGETING BAR
+@import "../../../ed-template-6/library/scss/vehicle-retargeting-bar/option-1/vehicle-retargeting-bar-base";
+
+// 404
+@import "../../../ed-template-6/library/scss/pages/404/option-1/missing-pg";
+
+// WIDGETS
+@import '../../../ed-template-6/library/scss/widgets/contact-box/option-1/variables';
+@import '../../../ed-template-6/library/scss/widgets/contact-box/option-1/contact-box-base';
+
+// INVENTORY OVERIDES
+@import "../../../ed-template-6/library/scss/common/inv-overides";
+
+// CHILD THEME STYLES ------------------------------------------------------------------ 
+
+// MISC
+@import 'common/misc';
+
+// INVENTORY OVERIDES
+@import "common/inv-overides-child";
+
+// SCSS TPL Start
+@import "header/option-13/variables";
+@import "../../../ed-template-6/library/scss/header/option-13/header-base";
+@import "../../../ed-template-6/library/scss/header/option-13/live-search";
+@import "../../../ed-template-6/library/scss/header/option-13/nav";
+@import "header/option-13/overrides";
+@import "header/option-13/overrides";
+@import "banner-static/option-4/variables";
+@import "../../../ed-template-6/library/scss/banner-static/option-4/banner-base";
+//@import "../../../ed-template-6/library/scss/banner-static/option-4/keyword-search";
+@import "../../../ed-template-6/library/scss/banner-static/option-4/live-search";
+@import "banner-static/option-4/overrides";
+@import "banner-static/option-4/overrides";
+@import "inv-search-bar/option-1/variables";
+@import "../../../ed-template-6/library/scss/inv-search-bar/option-1/inv-search-base";
+@import "../../../ed-template-6/library/scss/inv-search-bar/option-1/nice-select";
+@import "../../../ed-template-6/library/scss/inv-search-bar/option-1/live-search";
+@import "../../../ed-template-6/library/scss/inv-search-bar/option-1/instock-keyword-search";
+@import "inv-search-bar/option-1/overrides";
+@import "inv-search-bar/option-1/overrides";
+@import "ctas/option-2/variables";
+@import "../../../ed-template-6/library/scss/ctas/option-2/ctas-base";
+@import "ctas/option-2/overrides";
+//FOOTER
+@import "footer/option-cust/variables";
+@import "footer/option-cust/footer-base";
+@import "cta-banner/option-cust/cta-banner-base";
+// SCSS TPL End 

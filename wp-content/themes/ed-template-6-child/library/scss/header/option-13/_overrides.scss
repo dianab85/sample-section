@@ -1,0 +1,370 @@
+header.wp { 
+    background: #333333;
+    .sect-1 { 
+        background:#333333;
+        height: 110px;
+        .contact-sect{
+            display: none;
+        }
+        .secondary-menu {
+            display: none;
+        }
+        .logo-sect {
+            float:left;
+            a img {
+                max-width: 125px;
+            }
+        }
+        .drop-down {
+            display: none;
+            position: absolute;
+            right:10px;
+            top:12px; 
+            background:rgba($color1, 0.75);
+            width: 230px;
+            padding: 15px;
+            text-align: left;
+            border-radius: 10px;
+            color:#ffffff;
+            font-size:14px;
+            ul {
+                margin: 0;
+            }
+            section { 
+                padding:10px 0;
+
+                &:first-child {
+                    border-bottom:1px solid #790101; 
+                }
+                .icon-wrap{
+                    margin:8px 0;
+                    display: block;
+                    > i {
+                        display: inline-block;
+                        font-size:10px;                        
+                        color:#000000;
+                        background:#fff;
+                        display: inline-block;
+                        padding: 5px;
+                        border-radius: 25px; 
+                    }
+                }
+            }
+            .link {
+                display: block;
+                color:#ffffff;
+                font-size:14px;
+                font-weight:600;
+                i {
+                    display: inline;
+                    color:#000;
+                    font-size:7px;
+                    margin-left:3px;
+                }
+                &__gray {
+                    color:#dddddd;
+                }
+                
+            }
+            .link-gray {
+                color:#dddddd;
+                font-size:12px;
+                letter-spacing: 1px;
+                margin:10px 0;
+            }
+        }        
+        .contact-us-wrap {
+            position: relative;
+            float: right; 
+            &:hover, &:active  {
+                .drop-down {
+                    display: block;
+                } 
+            }
+            .btn {
+                z-index: 1;
+                padding: 5px 8px;
+                background:#ffffff;
+                border-radius: 20px;
+                font-size:12px; 
+                position: relative;
+                i {
+                    padding: 5px;
+                    border-radius: 25px; 
+                    background: $color1;
+                    font-size:10px; 
+                }
+                span {
+                    padding:0 10px;
+                    color:#000000;
+                    font-weight: 700;
+                }
+            }
+        }
+        .center-menu {
+            vertical-align: middle;
+            display: none;
+        }
+    }
+    .mobilemenu-sect { 
+        z-index: 0;
+        top: 50px;
+        .nav-button span {
+            background:#ffffff;
+        }
+    }    
+}
+.home header.wp {
+    background:transparent;
+    position: absolute;
+    .sect-1 {
+        background:transparent;
+    }
+}
+
+@media all and (min-width: 1240px) {
+    .home header.wp {
+        background:transparent;
+        .sect-1 {
+            background:transparent;
+            
+        }
+    }    
+}
+
+@media all and (min-width: 420px) {
+    header.wp { 
+        .sect-1 {
+            .contact-us-wrap { 
+                margin-right:20px;
+            }
+            .logo-sect {
+                a img {
+                    max-width: 145px;
+                }
+            }
+        }
+       
+    }    
+}
+
+@media all and (min-width: 600px) {
+    header.wp { 
+        .sect-1 { 
+            .contact-us-wrap { 
+                margin-right: 40px;
+                margin-top: 9px;
+                .drop-down {     
+                    width:380px;               
+                    section {
+                        display: block;
+                        float:left;
+                        width:calc( 50% - 20.5px );
+                        margin: 0 10px;
+                        &:first-child {
+                            border-bottom:0; 
+                            border-right:1px solid #790101; 
+                        }
+                    }
+                }
+            }
+        }
+        .mobilemenu-sect { 
+            top: 23px;
+            right: 15px;
+        }
+    } 
+}
+
+@media all and (min-width: 768px) { 
+    header.wp { 
+        .sect-1 { 
+            .contact-us-wrap { 
+                margin-right: 40px;
+                margin-top: 9px;
+                width: auto;
+            }
+            .logo-sect {
+                width:21%;
+            }
+        }
+        .mobilemenu-sect { 
+            top: 32px;
+            right: 38px;
+        }
+    }
+}
+
+@media all and (min-width: 1030px) { 
+    header.wp { 
+        .sect-1 { 
+            .center-menu {
+                display: inline-block;
+                text-align: center;
+                width: 56%;
+                .search-trigger{
+                    position: static;
+                    display: inline-block;
+                    vertical-align: middle;
+                    padding: 0 0 0 15px;
+                    &.search-trigger-active {
+                        z-index: 22;
+                        position: relative;
+                        transition: all 500ms;
+                        i {
+                            color: $search-icon-active-color;
+                        }
+                    }
+                }
+                nav ul{
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin: 0;
+                    li {
+                        display: inline-block;
+                        margin: 0 2px;
+                        float: none;
+                        a {
+                            color: $center-menu-text-color;
+                            transition: all 500ms;
+                            text-decoration: none;
+                            font-size: 14px;
+                            border-radius: 5px;
+                            padding: 5px 15px;
+                            &:hover {
+                                background: $center-menu-text-bg-hover-color;
+                                color: $center-menu-text-hover-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 1240px){
+    header.wp { 
+        background:#333333;
+        .sect-1 { 
+            background:#333333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .logo-sect {
+                position: absolute;
+                top: 50%;
+                left: 45px;
+                transform: translateY(-50%);
+                a img {
+                    max-width: 250px;
+                }
+            }
+            .nav-sect {
+                display: inline-block;
+                float: none;   
+                width: 100%;
+                text-align: center;
+                padding-right:215px;
+                padding-left:245px;
+                vertical-align: middle;
+
+                #menu-main-navigation {
+                    float: none;
+                    text-align: center;                    
+                    li {
+                        position: relative;
+                        float: none;
+                        display: inline-block;
+                        .sub-menu {
+                            &:first-child {
+                                li:before {
+                                    content: "";
+                                    position: absolute;
+                                    top:0;
+                                    left:0;
+                                    background: #000;
+                                    border-left: 5px solid transparent;
+                                    border-right: 5px solid transparent;  
+                                    border-bottom: 5px solid #000;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .contact-us-wrap {
+                position: absolute;
+                right: 100px;
+                top:50%;
+                transform: translateY(-50%);
+                margin: 0;
+            }
+            
+        }
+        
+        .mobilemenu-sect { 
+            top: 50%;
+            right: 45px;
+            transform:translateY(-50%); 
+        }
+    }
+    header.wp #menu-main-navigation > li.current-menu-item > a, 
+    header.wp #menu-main-navigation > li.current_page_ancestor > a, 
+    header.wp #menu-main-navigation > li.current-menu-parent > a {
+        color:#ffffff;
+    }
+    header.wp #menu-main-navigation > li { 
+        padding: 10px 0;
+        > a {
+            color:#ffffff;
+            padding: 2px 15px;
+            font-size:13px;
+            letter-spacing: 1px;
+            font-weight: 700;        
+        }
+    }
+    header.wp #menu-main-navigation > li > a:after {
+        display: none;
+    }
+    header.wp #menu-main-navigation ul.sub-menu li {
+        background: #eeeeee;
+        border-left: 1px solid #eeeeee;
+        border-right: 1px solid #eeeeee;
+    }
+    header.wp #menu-main-navigation ul.sub-menu > li:first-child {
+        border-top: 3px solid #eeeeee;
+    }
+    header.wp #menu-main-navigation ul.sub-menu {
+        background:#eeeeee;
+        padding-top:0;
+        margin-top:10px;
+       
+        li:first-child {
+            padding-top:5px;
+        }
+        a {
+            letter-spacing: 1px;
+        }
+    }
+    header.wp #menu-main-navigation ul.sub-menu ul.sub-menu li, 
+    header.wp #menu-main-navigation ul.sub-menu ul.sub-menu li > a {
+        background: #eeeeee;
+    }
+}
+
+@media all and (min-width: 1400px){ 
+    header.wp { 
+        .sect-1 { 
+            .logo-sect {
+                left:120px;
+            }
+            .contact-us-wrap {
+                right: 180px;
+            }
+        }
+        .mobilemenu-sect {
+            right: 120px;
+        }
+    }
+}
